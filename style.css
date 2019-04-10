@@ -1,0 +1,45 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Serif:700');
+h1{font-family: 'PT Serif', serif;
+  padding-top: 3.5rem;
+}
+strong,h2, a, h4, h5{font-family: 'PT Serif', serif;}
+
+p{font-family: 'Open Sans', sans-serif;}
+
+h6{font-family: 'Open Sans', sans-serif;padding-top: 1.5rem}
+.jumbotron{
+  background:
+  url("https://images8.alphacoders.com/503/thumb-1920-503078.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;}
+
+  @keyframes agua {
+    from {
+      background: #FFB900;
+    }
+    to {
+      background: #FF5900;
+    }
+  }
+
+  h2 {
+    color:#090606;
+    padding:0;
+    margin:0;
+    font-family: 'PT Serif', serif;
+    line-height: 1.75;
+    overflow-x: hidden;
+    /* a continuación llamaré a la animación definada más arriba */
+
+    /*animation: cualquiera 1s ease-in infinite alternate;*/
+
+    animation-name: agua;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* más sobre animación en https://developer.mozilla.org/es/docs/Web/CSS/animation */
+  }
